@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>whoami</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/135/135793.png  ">
 </head>
 <body>
     <section class="et-hero-tabs">
@@ -16,15 +18,21 @@
           <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.6435-9/82341210_2613536842208620_5477045684311949312_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeH33qYpFDlcUC69ZDpHKBpJSHxxsKA438xIfHGwoDjfzPBDyvBfc0AUCd35yHCtSXEyrWu2oFs9TOh6kwMwFGEb&_nc_ohc=1hSO9TPjqgkAX9DEdZh&_nc_ht=scontent.fmnl17-2.fna&oh=00_AT--o79rTMJ9TBAwbyYuv8GvZetzSdXC85TVmO94yWGtDA&oe=62E84780" alt="avatar" style="width:90%">
        </div>
       <div class="whoami">
-        <h1>Herc Bandiola</h1>
-        <h3>Hello I am currently second year college studying BS Computer Science in Philippines. Future software engineer or cybersecurity professional (I wish) still thinking of my path :D, for now I am focusing more on my studies and If I vacant time I do penetration testing and bughunting on Hackerone platform.</h3>
-      </div>
+          <h1>Herc Bandiola</h1>
+          <h3>Hello I am currently second year college studying BS Computer Science in Philippines. Future software engineer or cybersecurity professional (I wish) still thinking of my path :D, for now I am focusing more on my studies and If I vacant time I do penetration testing and bughunting on Hackerone platform.</h3>
+          <h4><em>“Simplicity is the ultimate sophistication.” - Leonardo da Vinci</em></h4>
+        <br>
+        <p>
+          Fun fact! I've made this portfolio
+          <span id="time-container">0</span> seconds ago! :D
+        </p>
+      
       </div>
 
         <div class="et-hero-tabs-container">
           <a class="et-hero-tab" href="#tab-project">Projects</a>
           <a class="et-hero-tab" href="#tab-contact">Contact me</a>
-          <a class="et-hero-tab" href="#tab-others">Others</a>
+          <a class="et-hero-tab" href="#tab-skill">skills</a>
           <span class="et-hero-tab-slider"></span>
         </div>
 
@@ -33,18 +41,66 @@
         <section class="et-slide" id="tab-project">
           <h1>Projects</h1>
           <h3>Backend simple ATM machine - C#</h3><a href="url">View project</a>
-          <h3>Dragonary breeding calculator - HTML, CSS and JAVASCRIPT</h3><a href="https://herculeszxc.github.io/Dragonary-breeding-web-calculator/">View project</a>
+          <h3>Dragonary breeding calculator - HTML, CSS & JAVASCRIPT</h3><a href="https://herculeszxc.github.io/Dragonary-breeding-web-calculator/">View project</a>
           <h3>Smart promo registration via dial clone - C#</h3><a href="url">View project</a>
+          <h3>This portfolio - HTMl, CSS & JAVASCRIPT </h3><a href="url">View project</a>
         </section>
+
         <section class="et-slide" id="tab-contact">
-          <h1>Contact me</h1>
-          <h3>wala pa haha</h3>
+          <h1>Contact me?</h1>
+            <div class="wrapper">
+              <a href="https://www.facebook.com/herc.bandiola.3/" target="_blank"  class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                <span><i class="fab fa-facebook-f"></i></span>
+              </a>
+              <a href="https://twitter.com/HerchercinMoko" target="_blank"  class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <span><i class="fab fa-twitter"></i></span>
+              </a>
+              <a href="https://www.instagram.com/herczxc/" target="_blank"  class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+              </a>
+              <a href="https://github.com/herculeszxc" target="_blank"  class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span>
+              </a>
+              <a href="https://www.linkedin.com/in/herc-bandiola-110b911b4/" target="_blank"  class="icon linkedin">
+                <div class="tooltip">Linkedin</div>
+                <span><i class="fab fa-linkedin"></i></span>
+              </a>
+            </div>  
         </section>
-        <section class="et-slide" id="tab-others">
-          <h1>Others</h1>
-          <h3>wala din hahahaha</h3>
+
+        <section class="et-slide" id="tab-skill">
+          <h1>Skills</h1>
+            <br>
+            <div class="skill-icon">
+              <i class="devicon-javascript-plain" ></i>
+              <i class="devicon-php-plain" style="padding-left:25px;"></i>
+              <i class="devicon-css3-plain" style="padding-left:25px;"></i>
+              <i class="devicon-java-plain-wordmark" style="padding-left:25px;"></i>
+              <i class="devicon-html5-plain" style="padding-left:25px;"></i>
+              <i class="devicon-csharp-plain" style="padding-left:25px;"></i>
+              <i class="devicon-cplusplus-plain" style="padding-left:25px;"></i>
+            </div>
         </section>
       </main>
 
 </body>
+<script>
+  const timeContainer = document.getElementById("time-container");
+  const BIRTH_DAY = "07-05-2022";
+  const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+  const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+  setInterval(() => {
+    const now = new Date();
+    const difference = Math.floor(
+      (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+    );
+
+    timeContainer.innerText = intlNumberFormatter.format(difference);
+  }, 1000);
+</script>
 </html>
