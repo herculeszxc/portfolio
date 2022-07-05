@@ -11,6 +11,7 @@ width: 150px;
   
 .whoami{
 	padding-top: 200px;
+	padding-right: 50px;
 }
 
 .clearfix::after {
@@ -45,7 +46,7 @@ body {
 	position: relative;
 	background: #eee;
 	text-align: center;
-	padding: 0 2em;
+	padding: 0em;
   }
   .et-hero-tabs h1,
   .et-slide h1 {
@@ -55,12 +56,12 @@ body {
 	padding-top: 50px;
 	float: none;
   }
+
   .et-hero-tabs h3,
   .et-slide h3 {
 	font-size: 1rem;
 	letter-spacing: 0.1rem;
 	opacity: 0.6;
-	
   }
 
 h4{
@@ -69,6 +70,7 @@ h4{
   i{
 	font-size: 50px;
   }
+  
   .et-hero-tabs-container {
 	display: flex;
 	flex-direction: row;
